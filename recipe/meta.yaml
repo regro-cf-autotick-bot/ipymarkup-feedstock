@@ -7,12 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ipymarkup-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/ipymarkup-{{ version }}.tar.gz
   sha256: 3f4bfa10fd66293201af8484a7e6bcb723bf2e33d9a6aa00882671af9ca26911
 
 build:
   skip: true  # [win]
-  number: 6
+  number: 7
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
